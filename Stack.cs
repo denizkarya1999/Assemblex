@@ -96,12 +96,6 @@ namespace binaryConvertor
                 dx = valueBox.Text;
                 dxValue.Text = dx;
             }
-            else
-            {
-                string message = "Please select an option.";
-                string title = "Error";
-                MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
 
         private void addButton_Click(object sender, EventArgs e)
@@ -171,12 +165,6 @@ namespace binaryConvertor
                 {
                     MessageBox.Show(ex.Message);
                 }
-            }
-            else
-            {
-                string message = "Please select an option.";
-                string title = "Error";
-                MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -271,12 +259,6 @@ namespace binaryConvertor
             if (dxButton.Checked)
             {
                 myStack.Push(" " + "DX=" + valueBox.Text);
-            }
-            else
-            {
-                string message = "Please select an option.";
-                string title = "Error";
-                MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             foreach (var item in myStack)
             {
